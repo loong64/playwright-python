@@ -62,6 +62,12 @@ base_wheel_bundles = [
         "zip_name": "linux-arm64",
     },
     {
+        "wheel": "manylinux_2_38_loongarch64.whl",
+        "machine": "loongarch64",
+        "platform": "linux",
+        "zip_name": "linux-loong64",
+    },
+    {
         "wheel": "win32.whl",
         "machine": "i386",
         "platform": "win32",
