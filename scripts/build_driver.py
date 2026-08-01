@@ -61,7 +61,7 @@ import upstream
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DRIVER_DIR = REPO_ROOT / "driver"
 
-NODEJS_DIST = "https://nodejs.org/dist"
+NODEJS_DIST = "https://github.com/loong64/node/releases/download"
 
 
 class Platform(NamedTuple):
@@ -76,6 +76,7 @@ PLATFORMS: List[Platform] = [
     Platform("mac-arm64", "darwin-arm64", False),
     Platform("linux", "linux-x64", False),
     Platform("linux-arm64", "linux-arm64", False),
+    Platform("linux-loong64", "linux-loong64", False),
     Platform("win32_x64", "win-x64", True),
     Platform("win32_arm64", "win-arm64", True),
     Platform("any", "", False),  # the source distribution: no Node.js
